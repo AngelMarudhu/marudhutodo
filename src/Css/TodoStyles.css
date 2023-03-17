@@ -1,0 +1,161 @@
+body {
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("../assets/todos.jpg");
+    background-position: center;
+    background-repeat: repeat;
+}
+.todo {
+max-width: 1128px;
+display: flex;
+flex-direction: column;
+max-width: 1128px;
+margin: auto;
+align-items: center;
+justify-content: center;
+}
+.todo-header {
+    display: flex;
+    margin: auto;
+}
+.todo-header input {
+    width: 800px;
+}
+.todo-header-input {
+    height: 40px;
+    border-radius: 20px 0 20px 0;
+    border: none;
+    font-size: 20px;
+    color: darkgoldenrod;
+    padding-left: 20px;
+    font-style: oblique;
+    transition-duration: 0.5s;
+    
+}
+
+.todo-header-input::placeholder {
+    font-size: 29px;
+    text-align: center;
+}
+.todo-header-input:focus {
+    outline: none;
+    border-radius: 0px 20px 0 20px;
+}
+
+.todo-header-update-button {
+    width: 200px;
+    border-radius: 20px 0px 20px 0;
+    border: none;
+    color: darkgoldenrod;
+    font-size: 30px;
+    transition-duration: 0.5s;
+}
+
+.todo-header-update-button {
+background-color: olive;
+color: black;
+border-radius: 0 20px 0 20px;
+}
+
+.todo-header-add-button {
+width: 200px;
+border-radius: 20px 0px 20px 0;
+border: none;
+color: darkgoldenrod;
+font-size: 30px;
+transition-duration: 0.5s;
+}
+
+.todo-header-add-button:hover {
+    background-color: olive;
+    color: black;
+    border-radius: 0 20px 0 20px;
+}
+
+.todo-active {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.todo-active button {
+    width: 200px;
+    border: none;
+    height: 40px;
+    transition-duration: 0.5s;
+    font-size: 24px;
+    color: white;
+}
+
+.todo-active button:hover {
+    border-radius: 0 20px 0 20px;
+    background-color: olive;
+    color: black;
+}
+
+.todo-active-all-button {
+    background-color:#FFBF9B;
+    border-radius: 20px 0 20px 0;
+}
+.todo-active-completed-button {
+    background-color: #B46060;
+    border-radius: 20px 0 20px 0;
+}
+.todo-active-active-button {
+    background-color: #4D4D4D;
+    border-radius: 20px 0 20px 0;
+}
+
+.todo-items {
+width: 100%;
+} 
+
+.todo-items-ul {
+width: 100%;
+margin: auto;
+}
+
+.todo-items-ul-li {
+width: 80%;
+list-style: none;
+background-color: #37306B;
+margin: 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-evenly;
+font-size: 25px;
+color: goldenrod;
+border: none;
+padding: 10px;
+border-radius: 20px 0 0 0 ;
+}
+
+.todo-items-ul-li button {
+        width: 160px;
+        border: none;
+        height: 35px;
+        transition-duration: 0.5s;
+        font-size: 24px;
+        color: cyan;
+        border-radius: 20px 0 20px 0;
+}
+
+.todo-items-ul-li button:hover  {
+    border-radius: 0px 20px 0px 20px;
+    color: black;
+}
+
+.todo-items-ul-li-edit-button {
+    background-color: #66347F;
+}
+
+.todo-items-ul-li-completed-button {
+    background-color: #9E4784;
+}
+
+.todo-items-ul-li-delete-button {
+    background-color: #D27685;
+}
