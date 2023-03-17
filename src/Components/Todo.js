@@ -43,6 +43,9 @@ const Todo = () => {
   }, [particularTodo]);
 
   const addButtonTodo = () => {
+    if (todo.length <= 0) {
+      return setTodo(prompt('Please Provide Some Todozzz'));
+    }
     dispatch(
       addTodo({
         todo,
